@@ -1,0 +1,223 @@
+header {
+  position: sticky;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s linear;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(28, 28, 28);
+  &.header-scroll {
+    top: -50px;
+  }
+}
+.header {
+  align-items: center;
+  .container {
+    height: 100%;
+    position: relative;
+    max-width: 1470px;
+    padding: 0 15px;
+  }
+  .header-body {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    a {
+      color: #ffffff;
+    }
+  }
+  .right {
+    display: flex;
+    gap: 16px;
+    .btn {
+      white-space: nowrap;
+    }
+    .header-burger {
+      background-color: #222;
+      display: none;
+      padding: 16px;
+      color: #ffffff;
+      @media screen and (max-width: 1024px) {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+    }
+    .cart-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 10px;
+      cursor: pointer;
+      p {
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .header-nav {
+    height: 100%;
+    .top-mobile {
+      display: none;
+      padding: 16px;
+      margin-bottom: 32px;
+      .logo {
+        max-width: 120px;
+      }
+      .close-menu {
+        padding: 16px;
+        display: flex;
+        gap: 10px;
+        background-color: #333;
+        color: #ffffff;
+      }
+      @media screen and (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+
+      transition: all 0.2s ease;
+      overflow: auto;
+      flex-direction: column;
+      z-index: 2;
+    }
+
+    &.active {
+      top: 0;
+    }
+  }
+
+  .nav-list {
+    height: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      padding: 0 16px;
+    }
+  }
+  .nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .nav-link {
+    position: relative;
+    height: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+    transition: all 0.1s linear;
+    @media screen and (max-width: 1024px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    &:hover {
+      color: #676767;
+    }
+    &:active,
+    &:focus {
+      color: var(--accent-color);
+      opacity: 1;
+    }
+  }
+}
+.logo {
+  cursor: pointer;
+  img {
+    width: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    width: 200px;
+  }
+}
+.current {
+  .nav-link {
+    color: var(--accent-color);
+  }
+  // &::after {
+  //   content: "";
+  //   height: 3px;
+  //   width: 100%;
+  //   background-color: var(--accent-color);
+  //   display: block;
+  //   transition: all 0.2s linear;
+  //   position: absolute;
+  //   border-radius: 5px;
+  //   bottom: -1px;
+  // }
+}
+.header-banner {
+  background-color: var(--accent-color);
+  padding: 16px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    .info {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      a {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
+  }
+  .location {
+    white-space: nowrap;
+    img {
+      @media screen and (max-width: 370px) {
+        display: none;
+      }
+    }
+  }
+  .phone {
+    white-space: nowrap;
+  }
+}
+.soc-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  .soc-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #676767;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

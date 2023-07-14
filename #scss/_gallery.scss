@@ -1,0 +1,39 @@
+.gallery {
+  padding: 16px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .col {
+    display: flex;
+    gap: 16px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    a {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.2s linear;
+      }
+    }
+  }
+  .col1 {
+    display: flex;
+    gap: 16px;
+  }
+  .col2 {
+    display: flex;
+    gap: 16px;
+  }
+}

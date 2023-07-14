@@ -1,0 +1,68 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: inherit;
+}
+img {
+  display: block;
+}
+.container {
+  width: 100%;
+  // max-width: 1440px;
+  margin: 0 auto;
+}
+.btn {
+  background-color: var(--accent-color);
+  padding: 16px;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.1s linear;
+  text-transform: capitalize;
+  &:active {
+    transform: scale(0.98);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.408);
+  }
+}
+button {
+  border: none;
+}
+section {
+  padding: 32px 0;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
