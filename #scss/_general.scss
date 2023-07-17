@@ -66,3 +66,20 @@ section {
   gap: 16px;
   align-items: center;
 }
+
+.error {
+  .container {
+    padding: 100px 15px;
+  }
+  .card {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .section-title {
+  }
+  .text {
+  }
+  .btn {
+    width: 100%;
+  }
+}

@@ -7,16 +7,20 @@ $(".header-burger").click(function (event) {
 $(".close-menu").click(function (event) {
   $(".header-nav").toggleClass("active");
 });
-$(".more").click(function (event) {
-  $(".text-block").toggleClass("open");
-  $(".about-company")
-    .find(".btn")
-    .text(function (i, text) {
-      return text === "read more" ? "close" : "read more";
-    });
-});
+
 $(".menu-item").click(function (event) {
   $(this).find(".dish-list").toggleClass("open");
+});
+$(".select").click(function (event) {
+  $(".sort-list").toggleClass("open");
+  $(this).find("img").toggleClass("open");
+});
+$(".sort-item").click(function (event) {
+  $(".sort-item").removeClass("selected");
+  $(this).addClass("selected");
+  $(".select .text").text($(".selected").text());
+  $(".sort-list").toggleClass("open");
+  $(".select").find("img").toggleClass("open");
 });
 const video = document.getElementById("video");
 const circlePlayButton = document.getElementById("circle-play-b");

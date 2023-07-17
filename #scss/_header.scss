@@ -35,10 +35,22 @@ header {
     a {
       color: #ffffff;
     }
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+  .soc-list {
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
   .right {
     display: flex;
     gap: 16px;
+    @media screen and (max-width: 600px) {
+      justify-content: space-between;
+      width: 100%;
+    }
     .btn {
       white-space: nowrap;
     }

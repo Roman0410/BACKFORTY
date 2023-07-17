@@ -22,3 +22,137 @@
     object-fit: cover;
   }
 }
+
+.variations {
+  padding: 0;
+  .container {
+  }
+  .variations-list {
+  }
+  .row {
+    display: flex;
+  }
+  .row1 {
+    border-bottom: 1px solid #d5d5d5;
+    .main {
+      padding: 32px 16px;
+      width: 50%;
+      border-right: 1px solid #d5d5d5;
+      .text {
+        span {
+          color: var(--blue);
+        }
+      }
+    }
+  }
+
+  .card-title {
+  }
+  .text {
+  }
+  .row2 {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    .col {
+      width: 50%;
+      border-right: 1px solid #d5d5d5;
+      border-bottom: 1px solid #d5d5d5;
+      padding: 32px 16px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      .text {
+        span {
+          display: block;
+          color: var(--blue);
+        }
+      }
+    }
+    .column {
+      max-width: 350px;
+      margin: auto;
+    }
+  }
+  .includes {
+  }
+  .section-title {
+  }
+  .add {
+  }
+}
+.about-service {
+  padding: 16px;
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .about-item {
+    width: calc((100% - 16px) / 2);
+    height: 300px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    position: relative;
+    &.inf {
+      @media screen and (max-width: 768px) {
+        height: 350px;
+      }
+      img:not(.card img) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000 100%);
+    justify-content: end;
+    padding: 32px;
+    .icon {
+      width: 80px;
+      height: 64px;
+      border-radius: 100px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .section-title {
+      color: #fff;
+    }
+    .text {
+      color: #c0c0c0;
+    }
+  }
+  .section-title {
+  }
+  .text {
+  }
+  .banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .contact {
+    background-color: var(--blue);
+    padding: 16px;
+    color: #fff;
+    .text {
+      color: #fff;
+    }
+    .contact-item {
+      text-align: center;
+      gap: 0;
+    }
+  }
+}

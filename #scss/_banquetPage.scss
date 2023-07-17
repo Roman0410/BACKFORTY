@@ -1,0 +1,64 @@
+.service-info {
+  border-top: 1px solid #eee;
+  .container {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .section-title {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .advantages {
+    .advantages-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .item {
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+    }
+  }
+  .text {
+  }
+  .rates {
+    .card-title {
+      margin-bottom: 32px;
+    }
+    .rates-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .rates-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc((100% - 48px) / 4);
+      border: 1px solid #eee;
+      padding: 16px;
+      @media screen and (max-width: 900px) {
+        width: calc((100% - 16px) / 2);
+      }
+      @media screen and (max-width: 400px) {
+        width: 100%;
+      }
+      img {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .capacities {
+    .card-title {
+      margin-bottom: 32px;
+    }
+    .large-text {
+      span {
+        color: var(--blue);
+      }
+    }
+  }
+}

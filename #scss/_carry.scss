@@ -1,0 +1,45 @@
+.carryOut {
+  .container {
+    padding: 0 16px;
+  }
+  .column {
+  }
+  .section-title {
+  }
+  .text {
+    max-width: 400px;
+  }
+  .carry-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+  .carry-item {
+    width: calc((100% - 48px) / 4);
+    @media screen and (max-width: 1240px) {
+      width: calc((100% - 32px) / 3);
+    }
+    @media screen and (max-width: 950px) {
+      width: calc((100% - 16px) / 2);
+    }
+    @media screen and (max-width: 590px) {
+      width: 100%;
+    }
+    img:not(.card img) {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  .card {
+    padding: 32px 16px;
+    border: 1px solid #eee;
+  }
+  .card-title {
+  }
+  .info {
+  }
+  .cost {
+  }
+}

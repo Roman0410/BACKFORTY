@@ -102,3 +102,11 @@ $(".reviews-slider").slick({
     },
   ],
 });
+$(".img-slider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true,
+  prevArrow: $(".product .slider").find(".prev"),
+  nextArrow: $(".product .slider").find(".next"),
+});
