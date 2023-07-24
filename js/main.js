@@ -7,7 +7,15 @@ $(".header-burger").click(function (event) {
 $(".close-menu").click(function (event) {
   $(".header-nav").toggleClass("active");
 });
-
+$(".cart-btn").click(function (event) {
+  $(".mini-cart").toggleClass("open");
+});
+$(".mini-cart .close").click(function (event) {
+  $(".mini-cart").toggleClass("open");
+});
+$(document).on("click", function (event) {
+  let cart = $(".mini-cart");
+});
 $(".menu-item").click(function (event) {
   $(this).find(".dish-list").toggleClass("open");
 });

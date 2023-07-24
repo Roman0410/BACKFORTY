@@ -235,6 +235,7 @@
         }
       }
       .card-title {
+        text-align: left;
       }
       .dish-part {
       }
@@ -351,5 +352,102 @@
   margin: 0;
   .card-title {
     text-align: center;
+  }
+}
+
+.checkOut {
+  .container {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .contactsForm {
+    form {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      margin-top: 16px;
+      @media screen and (max-width: 850px) {
+        flex-direction: column;
+        max-width: 700px;
+        margin: 16px auto 0;
+      }
+      input {
+        border: none;
+        background-color: #f3f3f3;
+        padding: 16px;
+        width: 25%;
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 20px;
+        text-align: center;
+        color: #6f6f6f;
+        &::placeholder {
+          color: #6f6f6f;
+        }
+        @media screen and (max-width: 850px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .section-title {
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .text {
+      max-width: 400px;
+      margin: auto;
+    }
+  }
+  .text {
+  }
+  .pay {
+  }
+  .cart {
+    .cart-list {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .cart-item {
+      width: calc((100% - 48px) / 4);
+      @media screen and (max-width: 1080px) {
+        width: calc((100% - 16px) / 2);
+      }
+      @media screen and (max-width: 530px) {
+        width: 100%;
+      }
+      img:not(.remove img) {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+      }
+      .card {
+        padding: 16px;
+        align-items: flex-start;
+        border: 1px solid #eee;
+        .text {
+          text-align: left;
+        }
+      }
+      .card-title {
+        text-align: left;
+      }
+      .dish-part {
+      }
+      .info {
+      }
+      .remove {
+        display: flex;
+        gap: 8px;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+    }
   }
 }
