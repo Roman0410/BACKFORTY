@@ -1,6 +1,7 @@
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
+new AirDatepicker("#pick-date");
 $(".header-burger").click(function (event) {
   $(".header-nav").toggleClass("active");
 });
